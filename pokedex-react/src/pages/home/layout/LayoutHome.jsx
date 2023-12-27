@@ -27,7 +27,7 @@ export default function LayoutHome() {
   return (
     <div className={scss.layuot}>
       <Header/>
-      <div>
+      <div className={scss.cardContent}>
         {arrayPokemon.map((card, index) => {
           return <Card key={index} card={card} />;
         })}
